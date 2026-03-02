@@ -1,3 +1,5 @@
+# This repository will no longer supported due to movement to Code Mode approach. [Please try it instead!](https://github.com/RomaRogov/cocos-code-mode)
+
 # Cocos Creator MCP Server
 
 A Cocos Creator extension that implements a Model Context Protocol (MCP) server with Streamable HTTP transport. This extension runs **directly within Cocos Creator** - no external tools, bridges, or setup required. Simply install the extension and start connecting AI assistants to your game development workflow.
