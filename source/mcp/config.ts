@@ -55,6 +55,7 @@ export interface McpServerToolConfig {
   
   // Project tools
   operateProjectSettings: boolean;
+  scriptHotReload: boolean;
   
   // File system tools (optional)
   operateScriptsAndText: boolean;
@@ -143,6 +144,7 @@ export const DEFAULT_TOOL_CONFIG: McpServerToolConfig = {
   
   // Project tools (enabled by default)
   operateProjectSettings: true,
+  scriptHotReload: true,
   
   // File system tools (disabled by default for security)
   operateScriptsAndText: false,
@@ -154,7 +156,7 @@ export const DEFAULT_TOOL_CONFIG: McpServerToolConfig = {
 export const DEFAULT_SERVER_CONFIG: McpServerConfig = {
   port: 3000,
   name: "cocos-mcp-server",
-  version: "1.0.1",
+  version: "1.0.2",
   tools: DEFAULT_TOOL_CONFIG,
   imageGeneration: DEFAULT_IMAGE_GENERATION_CONFIG
 };

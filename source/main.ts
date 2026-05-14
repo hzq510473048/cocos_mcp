@@ -210,7 +210,7 @@ export const methods: Record<string, (...args: any[]) => any> = {
                 config: {
                     port: 3000,
                     name: "cocos-mcp-server",
-                    version: "1.0.1",
+                    version: "1.0.2",
                     tools: {
                         createNodes: true,
                         modifyNodes: true,
@@ -226,6 +226,7 @@ export const methods: Record<string, (...args: any[]) => any> = {
                         getAssetsByType: true,
                         generateImageAsset: true,
                         operateProjectSettings: true,
+                        scriptHotReload: true,
                         operateScriptsAndText: true
                     }
                 }

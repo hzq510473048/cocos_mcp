@@ -29,7 +29,7 @@ module.exports = Editor.Panel.define({
            
             app.component('McpServerControl', defineComponent({
                 data() {
-                    const VERSION = '1.0.1';
+                    const VERSION = '1.0.2';
                     return {
                         VERSION,
                         serverInfo: {

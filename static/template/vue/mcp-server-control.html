@@ -188,6 +188,14 @@
           </ui-checkbox>
           <label>Project Settings</label>
         </div>
+        <div class="tool-item">
+          <ui-checkbox 
+            :value="config.tools.scriptHotReload" 
+            @change="onToolChange('scriptHotReload', $event)"
+            :disabled="serverInfo.isRunning">
+          </ui-checkbox>
+          <label>Script Hot Reload</label>
+        </div>
       </div>
 
       <!-- File System Tools (Security Sensitive) -->

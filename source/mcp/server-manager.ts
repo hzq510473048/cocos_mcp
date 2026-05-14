@@ -24,6 +24,7 @@ import { registerGetAssetsByTypeTool } from "./tools/get-assets-by-type.js";
 import { registerGenerateImageAssetTool } from "./tools/generate-image-asset.js";
 import { registerOperateCurrentSceneTool } from "./tools/operate-current-scene.js";
 import { registerOperateProjectSettingsTool } from "./tools/operate-project-settings.js";
+import { registerScriptHotReloadTool } from "./tools/script-hot-reload.js";
 import { registerOperatePrefabAssetsTool } from "./tools/operate-prefab-assets.js";
 import { registerOperateScriptsAndTextTool } from "./tools/operate-scripts-and-text.js";
 import { registerExecuteSceneCodeTool } from "./tools/execute-scene-code.js";
@@ -125,6 +126,9 @@ export class McpServerManager {
     // Project tools
     if (tools.operateProjectSettings) {
       registerOperateProjectSettingsTool(server);
+    }
+    if (tools.scriptHotReload) {
+      registerScriptHotReloadTool(server);
     }
     
     // File system tools (security-sensitive)
